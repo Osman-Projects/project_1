@@ -1,0 +1,998 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 1200px;
+  margin: auto;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+}
+
+header nav ul.first_ul,
+header nav ul.second_ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul.first_ul li {
+  list-style: none;
+  padding: 30px 18px;
+}
+
+header nav ul.first_ul li:hover {
+  background-color: #04aa6d;
+}
+
+header nav ul.first_ul li:nth-child(1):hover {
+  background-color: transparent;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #000;
+}
+
+header nav ul.first_ul li a:hover {
+  color: #fff;
+}
+
+header nav ul.second_ul li {
+  list-style: none;
+  margin: 5px;
+}
+
+header nav ul.second_ul li:nth-child(1) a {
+  background-color: #282a35;
+  color: #fff;
+  padding: 12px 20px;
+  display: block;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  font-weight: bold;
+}
+
+header nav ul.second_ul li:nth-child(1):hover a {
+  background-color: #52566d;
+}
+
+header nav ul.second_ul li:nth-child(2) a {
+  background-color: #ffc0c7;
+  padding: 12px 20px;
+  display: block;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  font-weight: bold;
+}
+
+header nav ul.second_ul li:nth-child(2):hover a {
+  background-color: #ff8e9a;
+}
+
+header nav ul.second_ul li:nth-child(3) a {
+  background-color: #fff4a3;
+  padding: 12px 20px;
+  display: block;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  font-weight: bold;
+}
+
+header nav ul.second_ul li:nth-child(3):hover a {
+  background-color: #ffee70;
+}
+
+header nav ul.second_ul li:nth-child(4) a {
+  background-color: #04aa6d;
+  color: #fff;
+  padding: 12px 20px;
+  display: block;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  font-weight: bold;
+}
+
+header nav ul.second_ul li:nth-child(4):hover a {
+  background-color: #008d53;
+}
+
+/* Banner Part */
+
+#banner_part {
+  position: relative;
+  width: 100%;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #282a35;
+  color: #fff;
+}
+
+.banner_content {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_content h1 {
+  font-size: 60px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+
+.banner_content h5 {
+  color: #ff8e9a;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.banner_content .searchbox {
+  width: 100%;
+}
+.banner_content .searchbox input[type="text"] {
+  width: 100%;
+  padding: 10px 40px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  position: relative;
+}
+
+.banner_content .searchbox .search_icon {
+  position: relative;
+  top: -38px;
+  z-index: 9999;
+  right: -401px;
+  color: #fff;
+  background-color: #008d53;
+  height: 38px;
+  width: 100px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.banner_content a {
+  color: #fff;
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+.banner_content a:hover {
+  color: #008d53;
+}
+
+/* html part */
+
+#html_bg {
+  background-color: rgb(217, 238, 225);
+  padding: 64px 0;
+}
+
+.html_part,
+.css_part,
+.java_part,
+.python_part,
+.sql_part {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+}
+
+.htmlsections,
+.htmlexample,
+.css-sections,
+.css-example,
+.java-sections,
+.java-example,
+.python-sections,
+.python-example,
+.sql-sections,
+.sql-example {
+  width: 600px;
+}
+
+.htmlsections,
+.css-sections,
+.java-sections,
+.python-sections,
+.sql-sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.htmlsections h3,
+.css-sections h3,
+.java-sections h3,
+.python-sections h3,
+.sql-sections h3 {
+  font-size: 90px;
+  margin-bottom: 30px;
+}
+
+.htmlsections h4,
+.css-sections h4,
+.java-sections h4,
+.python-sections h4,
+.sql-sections h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.htmlsections .html_sections_button,
+.css-sections .css_sections_button,
+.java-sections .java_sections_button,
+.python-sections .python_sections_button,
+.sql-sections .sql_sections_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.html_sections_button .learn_html,
+.css_sections_button .learn_css,
+.java_sections_button .learn_javascript,
+.python_sections_button .learn_python,
+.sql_sections_button .learn_sql {
+  background-color: #04aa6d;
+  color: #fff;
+  padding: 10px 60px;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.html_sections_button .learn_html {
+  padding: 10px 50px;
+}
+
+.html_sections_button .learn_html:hover,
+.css_sections_button .learn_css:hover,
+.java_sections_button .learn_javascript:hover,
+.python_sections_button .learn_python:hover,
+.sql_sections_button .learn_sql:hover {
+  background-color: #008d53;
+}
+
+.html_sections_button .reference_html,
+.css_sections_button .reference_css,
+.java_sections_button .reference_javascript,
+.python_sections_button .reference_python,
+.sql_sections_button .reference_sql {
+  background-color: #282a35;
+  color: white;
+  padding: 10px 40px;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.html_sections_button .reference_html {
+  padding: 10px 27px;
+}
+
+
+
+.html_sections_button .reference_html:hover,
+.css_sections_button .reference_css:hover,
+.python_sections_button .reference_python:hover,
+.sql_sections_button .reference_sql:hover {
+  background-color: #000;
+}
+
+.html_sections_button .certificet_html,
+.css_sections_button .certificet_css,
+.java_sections_button .certificet_javascript,
+.python_sections_button .certificet_python,
+.sql_sections_button .certificet_sql {
+  background-color: pink;
+  color: black;
+  padding: 10px 60px;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.html_sections_button .certificet_html {
+  padding: 10px 48px;
+}
+
+.html_sections_button .certificet_html:hover,
+.css_sections_button .certificet_css:hover,
+.java_sections_button .certificet_javascript:hover,
+.python_sections_button .certificet_python:hover,
+.sql_sections_button .certificet_sql:hover {
+  background-color: rgb(255, 183, 195);
+}
+
+.htmlexample,
+.css-example,
+.java-example,
+.python-example,
+.sql-example {
+  background-color: #e7e9eb;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 2px 10px 0px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.htmlexample .example,
+.css-example .example,
+.java-example .example,
+.python-example .example,
+.sql-example .example {
+  padding: 16px;
+}
+
+.htmlexample .example .example_content h4,
+.css-example .example .example_content h4,
+.java-example .example .example_content h4,
+.python-example .example .example_content h4,
+.sql-example .example .example_content h4{
+  padding: 16px 0;
+  font-size: 25px;
+}
+
+.htmlexample .example .example_content .html_content,
+.css-example .example .example_content .css_content,
+.java-example .example .example_content .java_content,
+.python-example .example .example_content .python_content,
+.sql-example .example .example_content .sql_content {
+  background-color: #fff;
+  border: 5px solid #008d53;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  padding: 16px 16px 60px;
+  font-size: 14px;
+}
+
+.html_content .lessthan,
+.html_content .greatertthen {
+  color: mediumblue;
+}
+
+.html_content .tag_name_color,
+.css_content .css_tag_name {
+  color: brown;
+}
+
+.example_content .practice_button {
+  padding: 16px 0;
+  display: inline-block;
+}
+
+.example_content a {
+  display: inline-block;
+  padding: 12px 40px;
+  text-decoration: none;
+  background: #04aa6d;
+  color: #fff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.example_content a:hover {
+  background: #008d53;
+}
+
+/* CSS Part */
+
+#css_bg {
+  background-color: rgb(255, 244, 163);
+  padding: 64px 0;
+}
+
+.css_sections_button .learn_css {
+  padding: 10px 57px;
+}
+
+.css_sections_button .reference_css {
+  padding: 10px 33px;
+}
+
+.css_sections_button .certificet_css {
+  padding: 10px 45px;
+}
+
+.css-example .example .example_content .css_content {
+  padding: 16px;
+}
+
+.css_content .css_tag_name {
+  margin-right: 5px;
+}
+
+.css_content .css_property_name {
+  color: red;
+  margin-left: 20px;
+  padding: 5px 0;
+  display: inline-block;
+}
+
+
+.css_content .css_property_value {
+    color: blue;
+}
+
+/* java part */
+
+#java_bg {
+  background-color: #282A35;
+  padding: 64px 0;
+}
+
+.java-sections h3 {
+  text-transform: capitalize;
+  font-size: 60px;
+}
+
+.java-sections h3,
+.java-sections h4 {
+  color: #fff;
+}
+
+.java_sections_button .learn_javascript {
+  padding: 10px 35px;
+}
+
+.java_sections_button .reference_javascript {
+  padding: 10px 17px;
+  background-color: white;
+  color: #000;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.java_sections_button .reference_javascript:hover {
+  background-color: rgb(245, 235, 235);
+}
+
+.java_sections_button .certificet_javascript {
+  padding: 10px 50px;
+}
+
+.java-example .example .example_content .java_content {
+  padding: 16px;
+}
+
+/* python part */
+
+#python_bg {
+  background-color: #F3ECEA;
+  padding: 64px 0;
+}
+
+.python-sections h3 {
+  font-size: 70px;
+}
+
+.python_sections_button .learn_python {
+  padding: 10px 50px;
+}
+
+.python_sections_button .reference_python {
+  padding: 10px 28px;
+}
+
+.python_sections_button .certificet_python {
+  padding: 10px 52px;
+}
+
+.python-example .example .example_content .python_content {
+  padding: 16px 16px 200px;
+}
+
+/* SQL Part */
+
+#sql_bg {
+  background-color: #96D4D4;
+  padding: 64px 0;
+}
+
+.sql_sections_button .reference_sql {
+  padding: 10px 35px;
+}
+
+.sql_sections_button .certificet_sql {
+  padding: 10px 49px;
+}
+
+.sql-example .example .example_content .sql_content  {
+  padding: 16px 16px 200px;
+}
+
+/* More Items */
+
+#more_section {
+  background-color: #282A35;
+  padding: 80px 0;
+}
+
+.more_items,
+.second_items {
+  width: 1200px;
+  margin: auto;
+  margin-top: 70px;
+}
+
+
+
+.item_part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.item_part .part_1,
+.item_part .part_2,
+.item_part .part_3,
+.item_part .part_4,
+.item_part .part_5,
+.item_part .part_6,
+.item_part .part_1_1,
+.item_part .part_2_2,
+.item_part .part_3_3,
+.item_part .part_4_4,
+.item_part .part_5_5,
+.item_part .part_6_6 {
+  width: 600px;
+  padding: 50px 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.item_part .part_1,
+.item_part .part_3,
+.item_part .part_5 {
+  background-color: #FFC0C7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.item_part .part_2,
+.item_part .part_4,
+.item_part .part_6 {
+  background-color: #FFF4A3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+
+
+.item_part .part_1_1,
+.item_part .part_3_3,
+.item_part .part_5_5 {
+  background-color: #FFC0C7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.item_part .part_2_2,
+.item_part .part_4_4,
+.item_part .part_6_6 {
+  background-color: #FFF4A3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+
+
+.item_part h5 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.item_part h6 {
+  font-size: 16px;
+  color: #3a3a3a;
+  margin-bottom: 15px;
+}
+
+.item_part .item_button {
+  margin-top: 12px;
+}
+
+.item_part .item_button a {
+  display: inline-block;
+  padding: 12px 40px;
+  text-decoration: none;
+  background: #282A35;
+  color: #fff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.item_part .item_button a:hover {
+  background-color: #000;
+}
+
+.item_part .part_1 .item_button a {
+  padding: 12px 50px;
+}
+
+.item_part .part_3 {
+  background-color: #F3ECEA;
+}
+
+.item_part .part_4 {
+  background-color: #D9EEE1;
+}
+
+.item_part .part_3 .item_button a,
+.item_part .part_4 .item_button a {
+  padding: 12px 50px;
+}
+
+.item_part .part_5 {
+  background-color: #96D4D4;
+}
+
+.item_part .part_5 h6 {
+  font-size: 14px;
+}
+
+.item_part .part_6 {
+  background-color: #E7E9EB;
+}
+
+.item_part .part_6 .item_button a {
+  padding: 12px 30px;
+}
+
+.second_items .item_part .part_1:hover {
+  background-color: #ffdade;
+  cursor: pointer;
+}
+
+.second_items .item_part .part_2:hover {
+  background-color: #fffad6;
+  cursor: pointer;
+}
+
+.second_items .item_part a {
+  text-decoration: none;
+  font-size: 26px;
+  color: #000;
+  font-weight: bold;
+}
+
+.line_1,
+.line_2,
+.line_3,
+.line_4,
+.line_5,
+.line_6,
+.line_7,
+.line_8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 45px;
+}
+
+.line_left,
+.line_right {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line_left {
+  margin-right: 40px;
+}
+
+.line_right  {
+  margin-left: 40px;
+}
+
+.r,
+.kotlin,
+.node_js,
+.react,
+.json,
+.angularjs,
+.mysql,
+.xml,
+.sass,
+.icons,
+.rwd,
+.graphics,
+.svg,
+.canvas,
+.raspberrypi,
+.cybersecurity,
+.colors,
+.git,
+.matplotlib,
+.numpy,
+.pandas,
+.scipy,
+.asp,
+.accessibility,
+.appal,
+.go,
+.typescript,
+.django,
+.mongodb,
+.statistics,
+.datascience,
+.typingspeed {
+  width: 250px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.r,
+.node_js,
+.json,
+.mysql,
+.sass,
+.rwd,
+.svg,
+.raspberrypi,
+.colors,
+.matplotlib,
+.pandas,
+.asp,
+.appal,
+.typescript,
+.mongodb,
+.datascience {
+  margin-right: 30px;
+}
+
+.kotlin,
+.react,
+.angularjs,
+.xml,
+.icons,
+.graphics,
+.canvas,
+.cybersecurity,
+.git,
+.numpy,
+.scipy,
+.accessibility,
+.go,
+.django,
+.statistics,
+.typingspeed {
+  margin-left: 30px;
+}
+
+.r,
+.angularjs,
+.rwd,
+.cybersecurity,
+.pandas,
+.go,
+.datascience {
+  background-color: #F3ECEA;
+}
+
+.r:hover,
+.angularjs:hover,
+.rwd:hover,
+.cybersecurity:hover,
+.pandas:hover,
+.go:hover,
+.datascience:hover {
+  background-color: #FCFBFA;
+}
+
+.kotlin,
+.mysql,
+.graphics,
+.colors,
+.scipy,
+.typescript,
+.typingspeed {
+  background-color: #D9EEE1;
+}
+
+.kotlin:hover,
+.mysql:hover,
+.graphics:hover,
+.colors:hover,
+.scipy:hover,
+.typescript:hover,
+.typingspeed:hover {
+  background-color: #fff;
+}    
+
+.node_js,
+.xml,
+.svg,
+.git,
+.asp,
+.django {
+  background-color: #96D4D4;
+}
+
+.node_js:hover,
+.xml:hover,
+.svg:hover,
+.git:hover,
+.asp:hover,
+.django {
+  background-color: #a8dbdb;
+}
+
+.react,
+.mongodb {
+  background-color: #ffa7b0 ;
+}
+
+.react:hover,
+.mongodb:hover {
+  background-color: #FFC0C7;
+}
+
+.json,
+.icons,
+.raspberrypi,
+.numpy,
+.appal,
+.statistics {
+  background-color: #FFF4A3;
+}
+
+.json:hover,
+.icons:hover,
+.raspberrypi:hover,
+.numpy:hover,
+.appal:hover,
+.statistics:hover {
+  background-color: #ffeb57 ;
+}
+
+.sass,
+.canvas,
+.matplotlib,
+.accessibility {
+  background-color: pink;
+}
+
+.sass:hover,
+.canvas:hover,
+.matplotlib:hover,
+.accessibility:hover {
+  background-color: #ffa7b6 ;
+}
+
+.item_part .part_3_3 {
+  background-color: #96D4D4;
+  cursor: pointer;
+}
+
+.item_part .part_3_3:hover {
+  background-color: #bae3e3;
+}
+
+.item_part .part_4_4 {
+  background-color: #FFF4A3;
+  cursor: pointer;
+}
+
+.item_part .part_4_4:hover {
+  background-color: #fff7bd;
+}
+
+.item_part .part_5_5 {
+  background-color:  #FFC0C7;
+  cursor: pointer;
+}
+
+.item_part .part_5_5:hover {
+  background-color: #ff8e9a;
+}
+
+.item_part .part_6_6 {
+  background-color: #F3ECEA;
+  cursor: pointer;
+}
+
+.item_part .part_6_6:hover {
+  background-color: #EADDDA;
+}
